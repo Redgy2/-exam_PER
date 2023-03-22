@@ -1,0 +1,31 @@
+###
+GET http://127.0.0.1:8000/api/clients
+
+###
+GET http://127.0.0.1:8000/api/clients/5148489111
+
+###
+POST http://127.0.0.1:8000/api/clients
+Content-Type: application/json
+
+{
+    "nom":"Redgy",
+    "adresse":"200 Bachand",
+    "telephone":"5149147480",
+    "date":"2023-03-21T04:00:00.000Z"
+}
+
+###
+PUT http://127.0.0.1:8000/api/clients/5148489111
+Content-Type: application/json
+
+{
+    "_id": "61770f4aabe8a0b17b5f1111",
+    "nom":"RETester pour changer de nom",
+    "adresse":"Nightmare Before Christmas",
+    "telephone":"5148489111",
+    "date":"2021-10-25T06:00:00.000Z"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/clients/5148489111
